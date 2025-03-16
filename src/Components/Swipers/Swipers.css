@@ -1,0 +1,53 @@
+.swipers {
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.swipers-swipertag {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.swipers-stag-sslide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swipers img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* 📱 Kichik ekranlar (max-width: 370px) */
+@media (max-width: 370px) {
+  .swipers {
+    padding: 0 5px;
+  }
+}
+
+/* 📱 Standart mobil ekranlar (max-width: 576px) */
+@media (max-width: 576px) {
+  .swipers {
+    padding: 0 10px;
+  }
+}
+
+/* 📱 Planshet ekranlar (max-width: 768px) */
+@media (max-width: 768px) {
+  .swipers {
+    max-width: 95%;
+    margin: 10px auto;
+  }
+}
+
+/* 🖥️ Katta ekranlar (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .swipers {
+    max-width: 1400px;
+    margin: 30px auto;
+  }
+}

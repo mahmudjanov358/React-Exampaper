@@ -1,0 +1,16 @@
+.savatcha-page {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px 20px;
+  margin: 20px 35px;
+}
+.savatcha-page-divs {
+  width: 320px;
+  height: 460px;
+  background-color: cadetblue;
+  text-align: center;
+  padding: 20px;
+}
+.savatcha-page-divs img {
+  width: 100%;
+}

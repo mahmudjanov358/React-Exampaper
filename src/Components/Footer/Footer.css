@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+#footer-comt {
+  background-color: #f2f2f2;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px 35px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 24px;
+}
+
+.footer1-small1,
+.footer1-small2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.footer1-small1 span,
+.footer1-small2 span {
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #444;
+}
+
+.footer1-small1 a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  color: #444;
+  text-decoration: none;
+}
+
+.footer1-small2 a {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 1.67;
+  color: #444;
+  text-decoration: none;
+}
+
+.footer1-small1 a:hover,
+.footer1-small2 a:hover {
+  color: red;
+  opacity: 65%;
+  transition: all 0.2s ease;
+}
+
+/* Footer2 - Information links */
+.footer2 ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.footer2 ul li a:hover {
+  color: red;
+  transition: color 0.2s ease-in;
+}
+
+.footer2 h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.67;
+  color: red;
+  margin-bottom: 24px;
+}
+
+.footer ul li a {
+  color: #111;
+  font-weight: 500;
+  line-height: 1.67;
+  font-size: 15px;
+}
+
+/* Footer3 - Payment methods */
+.footer3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer3 a {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer3 img {
+  width: 100px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .footer2 ul {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer1,
+  .footer2,
+  .footer3 {
+    width: 100%;
+  }
+
+  .footer3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer2 ul {
+    grid-template-columns: 1fr;
+  }
+
+  .footer3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Extra small devices (phones, 370px and down) */
+@media screen and (max-width: 370px) {
+  .footer {
+    padding: 15px 10px;
+  }
+
+  .footer-logo {
+    width: 80px;
+  }
+
+  .footer1-small1 span,
+  .footer1-small2 span {
+    font-size: 16px;
+  }
+
+  .footer1-small1 a {
+    font-size: 16px;
+  }
+
+  .footer1-small2 a {
+    font-size: 15px;
+  }
+
+  .footer2 h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  .footer ul li a {
+    font-size: 14px;
+  }
+
+  .footer3 a {
+    padding: 8px 10px;
+  }
+
+  .footer3 img {
+    width: 80px;
+    height: 24px;
+  }
+}

@@ -1,0 +1,410 @@
+.olcha-product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px 20px;
+}
+
+.olcha-product a {
+  text-decoration: none;
+}
+
+.olcha-product-card {
+  width: 260px;
+  height: 580px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 15px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.olcha-p-card-img {
+  position: relative;
+  margin-top: 10px;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.olcha-p-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.product-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 2;
+}
+
+.product-icons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffb4;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.product-icons button:hover {
+  background-color: #ffff80;
+}
+
+.heart-icon.liked {
+  color: red;
+}
+
+.olcha-product-card h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  margin: 15px 0 10px;
+  height: 48px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.olcha-product-paragraph {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.olcha-product-paragraph span {
+  font-size: 17px;
+  font-weight: 700;
+  color: red;
+  font-family: "Poppins", sans-serif;
+}
+
+.olcha-product-paragraph del {
+  font-size: 15px;
+  font-weight: 400;
+  color: #999;
+}
+
+.monthmoney {
+  font-size: 15px;
+  font-weight: 700;
+  color: #333;
+  background-color: gold;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  border-radius: 7px;
+  display: inline-block;
+}
+
+.olcha-product-btns {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.olcha-product-btns button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.olcha-p-btn1 {
+  border: 2px solid #000;
+  color: #000;
+  font-size: 26px;
+  padding: 8px 14px;
+  flex-shrink: 0;
+}
+
+.olcha-p-btn1:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.olcha-p-btn2 {
+  border: 2px solid red;
+  color: red;
+  font-size: 16px;
+  padding: 8px 24px;
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.olcha-p-btn2:hover {
+  background-color: red;
+  color: #fff;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 1200px) {
+  .olcha-product {
+    gap: 12px;
+    padding: 15px;
+  }
+
+  .olcha-product-card {
+    width: 240px;
+    height: 520px;
+  }
+
+  .olcha-p-card-img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .olcha-product-card {
+    width: 220px;
+    height: 500px;
+    padding: 12px;
+  }
+
+  .olcha-p-card-img {
+    height: 280px;
+  }
+
+  .olcha-product-card h2 {
+    font-size: 16px;
+    height: 42px;
+  }
+
+  .olcha-product-paragraph span {
+    font-size: 16px;
+  }
+
+  .olcha-product-paragraph del {
+    font-size: 14px;
+  }
+
+  .monthmoney {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .olcha-p-btn1 {
+    font-size: 22px;
+    padding: 6px 12px;
+  }
+
+  .olcha-p-btn2 {
+    font-size: 14px;
+    padding: 6px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .olcha-product {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .olcha-product-card {
+    width: 200px;
+    height: 460px;
+    padding: 10px;
+  }
+
+  .olcha-p-card-img {
+    height: 250px;
+  }
+
+  .product-icons button {
+    padding: 6px;
+    font-size: 18px;
+  }
+
+  .olcha-product-card h2 {
+    font-size: 15px;
+    margin: 10px 0 8px;
+    height: 40px;
+  }
+
+  .olcha-product-paragraph {
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  .olcha-product-paragraph span {
+    font-size: 15px;
+  }
+
+  .olcha-product-paragraph del {
+    font-size: 13px;
+  }
+
+  .monthmoney {
+    font-size: 13px;
+    padding: 6px;
+  }
+
+  .olcha-product-btns {
+    margin-top: 10px;
+  }
+
+  .olcha-p-btn1 {
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+  .olcha-p-btn2 {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .olcha-product {
+    gap: 15px;
+  }
+
+  .olcha-product-card {
+    width: 45%;
+    height: auto;
+    min-height: 420px;
+  }
+
+  .olcha-p-card-img {
+    height: 180px;
+  }
+
+  .olcha-product-card h2 {
+    font-size: 14px;
+    height: 38px;
+  }
+
+  .olcha-product-paragraph {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .olcha-product-btns {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .olcha-p-btn1,
+  .olcha-p-btn2 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .olcha-product-card {
+    width: 47%;
+    padding: 8px;
+  }
+
+  .olcha-p-card-img {
+    height: 160px;
+    margin-top: 5px;
+  }
+
+  .product-icons {
+    top: 5px;
+    right: 5px;
+    gap: 5px;
+  }
+
+  .product-icons button {
+    padding: 5px;
+    font-size: 16px;
+  }
+}
+
+/* Extra small devices (phones, 370px and down) */
+@media screen and (max-width: 370px) {
+  .olcha-product {
+    gap: 8px;
+    padding: 8px;
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .olcha-product-card {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+
+  .olcha-p-card-img {
+    height: 180px;
+    margin-top: 0;
+  }
+
+  .product-icons {
+    top: 5px;
+    right: 5px;
+  }
+
+  .product-icons button {
+    padding: 4px;
+    font-size: 14px;
+  }
+
+  .olcha-product-card h2 {
+    font-size: 14px;
+    height: auto;
+    max-height: 36px;
+    margin: 8px 0 6px;
+  }
+
+  .olcha-product-paragraph {
+    margin-bottom: 8px;
+  }
+
+  .olcha-product-paragraph span {
+    font-size: 12px;
+  }
+
+  .olcha-product-paragraph del {
+    font-size: 10px;
+  }
+
+  .monthmoney {
+    font-size: 10px;
+    padding: 4px 6px;
+  }
+
+  .olcha-product-btns {
+    margin-top: 8px;
+  }
+
+  .olcha-p-btn1 {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+
+  .olcha-p-btn2 {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

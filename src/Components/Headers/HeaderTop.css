@@ -1,0 +1,10 @@
+@media only screen and (max-width: 1024px) {
+  .headertop-figure {
+    display: none;
+  }
+}
+
+.headertop-figure img {
+  max-width: 100%;
+  height: auto;
+}
